@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+/* 整体容器样式，用于使表单上下居中 */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* 确保容器至少占满整个视口高度 */
+  background-color: #f4f4f4; /* 为整个页面添加背景色 */
+}
+
+/* 新增表单容器样式 */
+.form-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 80px; /* 保持之前增加的高度 */
+  width: 400px;
+  height: auto;
+  text-align: center;
+  background-color: #ebf8bc;
+  margin: 10vh auto;
+  display: flex; /* 使用 flexbox 布局 */
+  flex-direction: column; /* 垂直排列子元素 */
+  justify-content: center; /* 垂直居中 */
+  align-items: center; /* 水平居中 */
+}
+
+/* 新增表单标题样式 */
+.form-title {
+  margin-bottom: 30px; /* 增加标题与下一行的间距 */
+  font-size: 28px; 
+  font-weight: bold; 
+  line-height: 1.6; 
+}
+/* 新增按钮容器样式 */
+.button-container {
+  margin-bottom: 30px; /* 增加按钮容器与下一行的间距 */
+}
+
+/* 新增按钮样式 */
+.button-container  button,.input-container button {
+  margin: 0 10px;
+  padding: 12px 24px; /* 增大按钮内边距，让按钮更大 */
+  border-radius: 8px; /* 设置按钮圆角 */
+  background-color: #8b88f5; /* 按钮背景颜色 */
+  color: white; /* 按钮文字颜色 */
+  border: none; /* 去除按钮边框 */
+  cursor: pointer; /* 鼠标悬停时显示指针样式 */
+  transition: background-color 0.3s ease; /* 添加背景颜色过渡效果 */
+}
+
+/* 按钮悬停效果 */
+.button-container button:hover,.input-container button:hover {
+  background-color: #5f40f7; /* 鼠标悬停时按钮背景颜色变深 */
+}
+
+/* 新增输入框容器样式 */
+.input-container input {
+  margin-right: 10px;
+  padding: 12px 5px; /* 调整输入框内边距，使其高度与按钮适配 */
+  border-radius: 8px; /* 输入框圆角与按钮一致 */
+  border: 1px solid #ccc; /* 添加边框 */
+  box-sizing: border-box; /* 确保内边距和边框包含在元素的总宽度和高度内 */
+}
