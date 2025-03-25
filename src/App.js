@@ -105,7 +105,7 @@ function App() {
     <div className="App">
       <div className="form-container">
         <h2 className="form-title">请给“我”捐赠</h2>
-        <div>【测试网络：Sepolia】<br/>
+        <div>【测试网络：Sepolia，最低捐赠 2.00 美元，约 0.001 ETH 】<br/>
         【合约地址：0x3DD817E767a6d762eF5d13bAAb0e7Dc784Ce7a07】</div>
         <h4>【当前账户：{walletAddress}】</h4>
         <div className="button-container">
@@ -113,11 +113,11 @@ function App() {
           <button onClick={queryBalance}>查询捐赠金额</button>
         </div>
         <div className="input-container">
-          <input type="text" placeholder="输入捐赠金额" onChange={fundInputAmount}/>
+          <input type="text" placeholder="输入捐赠金额（ETH）" onChange={fundInputAmount}/>
           <button onClick={fund}>捐赠</button>
         </div>
         <div className="input-container">
-          <input type="text" placeholder="输入提现金额" onChange={withdrawInputAmount}/>
+          <input type="text" placeholder="输入提现金额（ETH）" onChange={withdrawInputAmount}/>
           <button onClick={withdraw}>提现</button>
         </div>
         <p className="status">{message}</p>

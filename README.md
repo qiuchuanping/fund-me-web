@@ -1,71 +1,55 @@
+# Fund Me
+本项目是一个基于以太坊区块链的智能合约应用，前端使用 React 构建，结合 Web3.js 库与以太坊区块链交互，并部署在 Sepolia 测试网络上运行。该应用允许用户连接钱包，向智能合约捐赠以太币，并在需要时从合约中提取捐赠资金，同时可以查询捐赠余额（捐赠总资金-已提取资金），提取和查询功能必须是合约的拥有者才能使用。
 
-# Getting Started with Create React App
+该项目是作者入坑WEB3的第二个练手项目，在学习了Patrick Collins的《Foundry Fundamentals》系列课程后手撸的项目。
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+课程原地址：https://updraft.cyfrin.io/courses/foundry
+B站精翻地址： https://www.bilibili.com/video/BV13a4y1F7V3
 
-## Available Scripts
+该项目没有采用Patrick老师的HTML前端，前端采用React开发，作为后端工程师来写前端，JS还凑合，CSS样式，布局什么的确实有点抠脑壳，按照惯例，必须祭出AI助手，面向AI编程，基本功能终于可以呈现了。
 
-In the project directory, you can run:
+本次项目没有再使用Remix，而是使用了更专业的Foundry框架开发,更接近真实的开发环境，完成了开发、测试、部署等一系列操作。
 
-### `npm start`
+合约项目地址：
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 技术栈
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **前端框架**：React，用于构建用户界面，实现组件化开发和状态管理。
+- **Web3 库**：Web3.js，用于与以太坊区块链进行交互，包括连接钱包、调用智能合约方法等。
+- **chainlink/contracts 库**：智能合约开发库，与Chainlink 的价格预言机进行交互，获取加密货币的价格数据。
+- **智能合约**：Solidity，编写 FundMe 智能合约，处理捐赠、提取、查询等操作。
 
-### `npm test`
+## 环境搭建
+- 环境准备，Node.js 和 Git 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+node -v
+v18.20.4
 
-### `npm run build`
+npm -v
+10.7.0
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git -v
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 修改npm镜像源
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm config set registry https://registry.npmmirror.com/
+```
 
-### `npm run eject`
+- 运行项目
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+# 进入工作目录,克隆项目到本地
+git clone https://github.com/qiuchuanping/fund-me.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 进入项目目录
+cd fund-me
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 安装
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 运行
+npm run start
+```
