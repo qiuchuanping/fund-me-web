@@ -13,48 +13,46 @@
   }
 }
 
-
-
-
-/* 整体容器样式，用于使表单上下居中 */
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh; /* 确保容器至少占满整个视口高度 */
   background-color: #f4f4f4; /* 为整个页面添加背景色 */
+  /* 添加背景图 */
+  background-image: url('/public/back.png'); /* 替换为你的背景图文件名 */
+  background-size: cover; /* 让背景图覆盖整个容器 */
+  background-position: center; /* 让背景图居中显示 */
+  background-repeat: no-repeat; /* 禁止背景图重复显示 */
 }
 
-/* 新增表单容器样式 */
 .form-container {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 60px; /* 保持之前增加的高度 */
-  width: 400px;
+  width: 500px;
   height: auto;
   text-align: center;
-  background-color: #ebf8bc;
+  background-color: #e2efa4;
   margin: 10vh auto;
   display: flex; /* 使用 flexbox 布局 */
   flex-direction: column; /* 垂直排列子元素 */
   justify-content: center; /* 垂直居中 */
   align-items: center; /* 水平居中 */
+  opacity: 0.9;
 }
 
-/* 新增表单标题样式 */
 .form-title {
-  margin-bottom: 30px; /* 增加标题与下一行的间距 */
   font-size: 30px; 
   font-weight: bold; 
   line-height: 1.6; 
 }
-/* 新增按钮容器样式 */
+
 .button-container {
   margin-bottom: 30px; /* 增加按钮容器与下一行的间距 */
 }
 
-/* 新增按钮样式 */
 .button-container  button,.input-container button {
   margin: 0 10px;
   padding: 12px 24px; /* 增大按钮内边距，让按钮更大 */
@@ -66,12 +64,10 @@
   transition: background-color 0.3s ease; /* 添加背景颜色过渡效果 */
 }
 
-/* 按钮悬停效果 */
 .button-container button:hover,.input-container button:hover {
   background-color: #5f40f7; /* 鼠标悬停时按钮背景颜色变深 */
 }
 
-/* 新增输入框容器样式 */
 .input-container input {
   margin-bottom: 30px; /* 增加按钮容器与下一行的间距 */
   padding: 12px 5px; /* 调整输入框内边距，使其高度与按钮适配 */
@@ -84,4 +80,18 @@
   font-size: 0.8em; 
   color: red;
   margin-bottom: -20px;
+}
+
+/* 减少 h2 标签底部的外边距 */
+.form-container h2 {
+  margin-bottom: 2px; /* 可按需调整此值 */
+}
+.form-container h4 {
+  color: #ba4806; 
+}
+
+/* 减少合约地址 div 标签顶部的外边距 */
+.form-container div:nth-of-type(1) { 
+  margin-top: 0; /* 设为 0 可让二者紧密相连 */
+  color: red;
 }
