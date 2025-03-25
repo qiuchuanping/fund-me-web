@@ -30,7 +30,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 80px; /* 保持之前增加的高度 */
+  padding: 60px; /* 保持之前增加的高度 */
   width: 400px;
   height: auto;
   text-align: center;
@@ -45,7 +45,7 @@
 /* 新增表单标题样式 */
 .form-title {
   margin-bottom: 30px; /* 增加标题与下一行的间距 */
-  font-size: 28px; 
+  font-size: 30px; 
   font-weight: bold; 
   line-height: 1.6; 
 }
@@ -73,9 +73,15 @@
 
 /* 新增输入框容器样式 */
 .input-container input {
-  margin-right: 10px;
+  margin-bottom: 30px; /* 增加按钮容器与下一行的间距 */
   padding: 12px 5px; /* 调整输入框内边距，使其高度与按钮适配 */
   border-radius: 8px; /* 输入框圆角与按钮一致 */
   border: 1px solid #ccc; /* 添加边框 */
   box-sizing: border-box; /* 确保内边距和边框包含在元素的总宽度和高度内 */
+}
+
+.status {
+  font-size: 0.8em; 
+  color: red;
+  margin-bottom: -20px;
 }
