@@ -54,3 +54,26 @@ npm run start
 ```
 ## 效果展示
 ![](https://raw.githubusercontent.com/qiuchuanping/fund-me-web/main/images/1.png)
+
+## TIPS
+> 当使用魔法时，可能会出现git push失败的情况，可通过为git设置代理解决,可针对单独仓库设置，也可全局设置
+```shell
+# 针对单个仓库
+git config http.proxy http://127.0.0.1:7890
+# 全局设置
+git config --global http.proxy http://127.0.0.1:7890
+```
+> 取消代理
+```shell
+# 针对单个仓库
+git config --unset http.proxy
+# 全局设置
+git config --global --unset http.proxy
+```
+> 查看代理
+```shell
+# 查看单个仓库代理
+git config --get http.proxy
+# 查看全局代理
+git config --global --get http.proxy
+```
