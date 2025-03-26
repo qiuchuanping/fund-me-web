@@ -52,3 +52,5 @@ npm install
 # 运行
 npm run start
 ```
+## 效果展示
+![](https://raw.githubusercontent.com/qiuchuanping/fund-me-web/main/images/1.png)
