@@ -1,9 +1,10 @@
 # Fund Me
 本项目是一个基于以太坊区块链的智能合约应用，前端使用 React 构建，结合 Web3.js 库与以太坊区块链交互，并部署在 Sepolia 测试网络上运行。该应用允许用户`连接钱包`，向智能合约`捐赠`以太币，并在需要时从合约中`提取`捐赠资金，同时可以`查询`捐赠余额（捐赠总资金-已提取资金），`提取`功能必须是合约的拥有者才能使用。
 
-该项目是作者入坑WEB3的第二个练手项目，在学习了Patrick Collins的《Foundry Fundamentals》系列课程后手撸的项目。
+该项目是作者入坑WEB3的第二个练手项目，在学习了Patrick Collins的《Foundry Fundamentals》系列课程后编码实现。
 
 课程原地址：https://updraft.cyfrin.io/courses/foundry
+
 B站精翻地址： https://www.bilibili.com/video/BV13a4y1F7V3
 
 该项目没有采用Patrick老师的HTML前端+Javascript的模式，而是采用React，并结合Web3.js库开发，作为后端工程师来写前端，JS还凑合，CSS样式，布局什么的确实有点抠脑壳，按照惯例，必须祭出AI助手，面向AI编程，基本功能终于可以呈现了。
