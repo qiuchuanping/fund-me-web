@@ -9,7 +9,7 @@ B站精翻地址： https://www.bilibili.com/video/BV13a4y1F7V3
 
 该项目没有采用Patrick老师的HTML前端+Javascript的模式，而是采用React，并结合Web3.js库开发，作为后端工程师来写前端，JS还凑合，CSS样式，布局什么的确实有点抠脑壳，按照惯例，必须祭出AI助手，面向AI编程，基本功能终于可以呈现了。
 
-合约项目地址：
+合约项目地址：https://github.com/qiuchuanping/fund-me.git
 
 ## 技术栈
 
